@@ -163,7 +163,11 @@
     });
     modal.appendChild(accentInput);
 
-    // Кнопки
+   const authorLink = document.createElement('div');
+   authorLink.style.cssText = 'margin-top: 15px; text-align: center; font-size: 13px;';
+      authorLink.innerHTML = 'Создатель: <a href="https://t.me/pr0stoy4elovek/" target="_blank" style="color:var(--accent); text-decoration: underline;">t.me/pr0stoy4elovek</a>';
+modal.appendChild(authorLink);
+
     const btnRow = document.createElement('div');
     btnRow.className = 'btn-row';
     btnRow.style.display = 'flex';
