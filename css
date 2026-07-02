@@ -1,0 +1,479 @@
+:root {
+  --accent: #ff0015;
+
+  --glass-bg: rgba(20, 20, 22, 0.1);
+  --glass-blur: 8px;
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --glass-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+  --row-border: rgba(255, 255, 255, 0.04);
+  --row-hover-bg: rgba(255, 255, 255, 0.03);
+  --row-hover-border: rgba(255, 0, 21, 0.15);
+
+  --opacity-nav: 0.8;
+  --opacity-container: 0.7;
+  --opacity-footer: 0.8;
+  --opacity-buttons: 0.85;
+
+  --header-bg: rgba(20, 20, 22, 0.1);
+  --header-blur: 8px;
+
+  --misc-glass-bg: rgba(20, 20, 22, 0.15);
+  --misc-glass-blur: 6px;
+
+  --text-shadow: 1px 0 2px #000, 0 1px 2px #000, -1px 0 2px #000, 0 -1px 2px #000;
+}
+
+html, body {
+  background-image: url("https://w.wallhaven.cc/full/j5/wallhaven-j5g7pp.jpg") !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.p-pageWrapper,
+.p-body,
+.p-body-content,
+.p-body-main,
+.p-body-columns {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.p-body-pageContent .block:nth-child(even)::after,
+.p-body-sidebar .block:nth-child(even)::after,
+.p-body-pageContent .block:nth-child(odd)::after,
+.p-body-sidebar .block:nth-child(odd)::after,
+.p-body-pageContent .block--category:first-child .block-header::before {
+  display: none !important;
+}
+
+.button-text {
+  font-weight: bold;
+}
+.button, a.button {
+  color: #fff;
+}
+.block.block--category .block-header {
+  text-shadow: 0 0 1px rgb(0 242 255 / 70%);
+}
+
+.menu-tabHeader .tabs-tab.is-active {
+  border-color: var(--accent);
+}
+.badge.badge--highlighted,
+.badgeContainer.badgeContainer--highlighted:after {
+  background: var(--accent);
+}
+.tabs-tab {
+  color: var(--accent);
+}
+.blockLink.is-selected {
+  color: var(--accent);
+  border-left: 2px solid var(--accent);
+}
+.block-tabHeader .tabs-tab:hover {
+  color: var(--accent);
+}
+.button.button--primary,
+a.button.button--primary {
+  background: linear-gradient(var(--accent), var(--accent));
+}
+.button.button--primary:hover, a.button.button--primary:hover,
+.button.button--primary:focus, a.button.button--primary:focus {
+  background: linear-gradient(var(--accent), var(--accent));
+}
+.menu-linkRow.is-selected,
+.menu-linkRow:hover,
+.menu-linkRow:focus {
+  color: var(--accent);
+}
+.fr-toolbar {
+  border-top: 2px solid var(--accent);
+}
+.block-tabHeader .tabs-tab.is-active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.messageNotice {
+  border-left: 2px solid var(--accent);
+}
+.messageNotice:before {
+  color: var(--accent);
+}
+.messageNotice:not(.messageNotice--highlighted) a,
+.messageNotice:not(.messageNotice--highlighted) a:hover {
+  color: var(--accent);
+}
+.bbCodeBlock {
+  border-left: 2px solid var(--accent);
+}
+.bbCodeBlock-title {
+  color: var(--accent);
+}
+.button.button--scroll, a.button.button--scroll {
+  background: linear-gradient(var(--accent), var(--accent));
+}
+.bbCodeBlock-expandLink a {
+  color: var(--accent);
+}
+.message-newIndicator {
+  background: var(--accent);
+}
+.menu-content:before {
+  background: linear-gradient(-270deg, var(--accent) 0%, var(--accent) 100%);
+}
+.tabs--standalone .tabs-tab.is-active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.tabs--standalone .tabs-tab:hover {
+  color: var(--accent);
+}
+.p-nav-list .p-navEl.is-selected:after {
+  background: linear-gradient(-270deg, var(--accent) 0%, var(--accent) 100%);
+}
+.p-nav-list .p-navEl.is-selected {
+  color: var(--accent);
+}
+.button.button--link, a.button.button--link {
+  background: var(--accent);
+}
+.block-body .block-minorHeader.uix_threadListSeparator:before {
+  background: linear-gradient(-270deg, var(--accent) 0%, var(--accent) 100%);
+}
+.button.button--cta, a.button.button--cta {
+  background: var(--accent);
+  border-color: var(--accent);
+  background-color: var(--accent);
+}
+.button.button--cta:hover, a.button.button--cta:hover,
+.button.button--cta:focus, a.button.button--cta:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  background-color: var(--accent);
+}
+.button--cta {
+  background: var(--accent);
+  border-color: var(--accent);
+  background-color: var(--accent);
+}
+
+.p-nav {
+  opacity: var(--opacity-nav);
+}
+.block-container {
+  opacity: var(--opacity-container);
+}
+.p-footer {
+  opacity: var(--opacity-footer);
+}
+
+.p-nav-list .p-navEl-link,
+.p-nav-list .p-navEl {
+  background-color: transparent !important;
+  background: transparent !important;
+  transition: all 0.25s ease !important;
+  border-radius: 10px !important;
+}
+.p-nav-list .p-navEl-link:hover {
+  background: rgba(255, 0, 21, 0.08) !important;
+  border-radius: 10px !important;
+}
+
+.block-container,
+.p-body-pageContent .block {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(var(--glass-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) !important;
+  border-radius: 18px !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+  overflow: hidden !important;
+}
+
+.node-body,
+.block-row,
+.node--forum .node-body,
+li.block-row,
+.listBlock-row,
+.structItem {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid var(--row-border) !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+  box-sizing: border-box !important;
+  transition: background 0.2s ease !important;
+}
+.node-body:hover,
+.block-row:hover,
+li.block-row:hover,
+.listBlock-row:hover,
+.structItem:hover {
+  background: var(--row-hover-bg) !important;
+  border-bottom: 1px solid var(--row-hover-border) !important;
+}
+.block-container li.block-row:last-child,
+.block-container .structItem:last-child {
+  border-bottom: none !important;
+}
+
+.p-body-header {
+  background: var(--header-bg) !important;
+  backdrop-filter: blur(var(--header-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--header-blur)) !important;
+  border-radius: 18px !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+}
+.block--category .block-header,
+.p-title {
+  background: var(--header-bg) !important;
+  backdrop-filter: blur(var(--header-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--header-blur)) !important;
+  border-radius: 18px !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+  overflow: hidden !important;
+}
+.p-title-pageTitle,
+.p-breadcrumbs {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.button.button--cta, a.button.button--cta,
+.buttonGroup,
+.button--scroll.ripple-JsOnly.button,
+.pageNav-main,
+.pageNav-jump,
+.tabPanes,
+.menu-content,
+.overlay {
+  opacity: var(--opacity-buttons);
+}
+
+span[itemprop="name"],
+.p-body-header .p-title-value {
+  text-shadow: var(--text-shadow);
+}
+
+span.hScroller-scroll.is-calculated,
+.block-minorHeader {
+  background: var(--misc-glass-bg) !important;
+  backdrop-filter: blur(var(--misc-glass-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--misc-glass-blur)) !important;
+  opacity: 1 !important;
+  border-radius: 8px;
+}
+
+/* Логотип (при необходимости замените ссылку) */
+.a .uix_logo {
+  background-image: url("https://emkfriedrichsdorf.de/sites/default/files/icons/YouTub..");
+  background-attachment: fixed;
+}
+
+.js-thHolidaysSnowstormCanvas {
+  opacity: 0;
+}
+
+.p-navSticky.is-sticky,
+.p-navSticky.is-sticky .p-nav,
+.p-nav.is-sticky {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(var(--glass-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#customSettingsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#customSettingsModal .settings-modal {
+  background: rgba(20, 20, 22, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  padding: 25px 30px;
+  width: 420px;
+  max-width: 90%;
+  color: #eee;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#customSettingsModal .settings-modal h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#customSettingsModal .settings-modal input[type="url"],
+#customSettingsModal .settings-modal input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.2s;
+}
+#customSettingsModal .settings-modal input[type="url"]:focus {
+  border-color: var(--accent);
+}
+
+#customSettingsModal .settings-modal label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+#customSettingsModal .settings-modal input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+  margin: 10px 0 5px;
+}
+#customSettingsModal .settings-modal input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+#customSettingsModal .settings-modal input[type="color"] {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#customSettingsModal .settings-modal .btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+#customSettingsModal .settings-modal .btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+#customSettingsModal .settings-modal .btn-cancel {
+  background: rgba(255,255,255,0.1);
+  color: #ccc;
+  border-color: rgba(255,255,255,0.15);
+}
+#customSettingsModal .settings-modal .btn-cancel:hover {
+  background: rgba(255,255,255,0.2);
+}
+#customSettingsModal .settings-modal .btn-reset {
+  background: rgba(255,255,255,0.1);
+  color: #ccc;
+  border-color: rgba(255,255,255,0.15);
+}
+#customSettingsModal .settings-modal .btn-reset:hover {
+  background: rgba(255,255,255,0.2);
+}
+#customSettingsModal .settings-modal .btn-save {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+#customSettingsModal .settings-modal .btn-save:hover {
+  filter: brightness(1.1);
+}
+::-webkit-scrollbar-thumb,
+html ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent) !important;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track,
+html ::-webkit-scrollbar-track,
+body ::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+* {
+  scrollbar-color: var(--accent) transparent;
+  scrollbar-width: thin;
+}
+html, body {
+  scrollbar-width: none;           
+  -ms-overflow-style: none;        
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                   
+}
+/* ===== АБСОЛЮТНОЕ ПЕРЕОПРЕДЕЛЕНИЕ ВЫДЕЛЕНИЯ ===== */
+html::selection,
+body::selection,
+*::selection {
+  background-color: var(--accent) !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+html::-moz-selection,
+body::-moz-selection,
+*::-moz-selection {
+  background-color: var(--accent) !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+/* Иконка для кнопки "Настройки" */
+a.p-navEl-link[data-nav-id="customSettings"]::before {
+  content: '';
+  display: inline-block;
+  width: 25px;   
+  height: 25px;  
+  margin-right: 8px;
+  background: url(https://i.ibb.co/RT1T8xWn/icons8-94.png) center/contain no-repeat;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.5)); 
+}

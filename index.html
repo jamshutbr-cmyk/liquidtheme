@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass - Тема для Rodina RP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">LG</span>
+                <span class="brand-text">Liquid Glass</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">О теме</a>
+                <a href="#gallery" class="nav-link">Превью</a>
+                <a href="#installation" class="nav-link">Установка</a>
+                <a href="#download" class="nav-link">Скачать</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="color-picker-wrapper">
+                    <label for="colorPicker">Цвет:</label>
+                    <input type="color" id="colorPicker" value="#ff0015" class="color-input">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Новая версия 2.0</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-main">Liquid Glass</span>
+                    <span class="title-sub">Стеклянная тема для Rodina RP</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Превратите ваш форум в современный интерфейс с эффектами glassmorphism. 
+                    Прозрачные блоки, настраиваемые цвета и красивые анимации.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">CSS правил</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Настроек</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Расширение</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#installation" class="btn btn-primary">
+                        <span>Установить тему</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 13L10 16L17 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#gallery" class="btn btn-secondary">
+                        <span>Смотреть превью</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 12L12 15L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">О теме</div>
+                <h2 class="section-title">Что такое Liquid Glass?</h2>
+                <p class="section-subtitle">
+                    Современная тема в стиле glassmorphism с полной настройкой под ваши потребности
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Glassmorphism дизайн</h3>
+                    <p>Современные прозрачные блоки с эффектом размытого стекла</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M19.4 15A1.65 1.65 0 0 0 21 13.35A1.65 1.65 0 0 0 19.4 11.65A1.65 1.65 0 0 0 18 13A1.65 1.65 0 0 0 19.4 15Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4.6 15A1.65 1.65 0 0 0 6 13.35A1.65 1.65 0 0 0 4.6 11.65A1.65 1.65 0 0 0 3 13A1.65 1.65 0 0 0 4.6 15Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Настройки в реальном времени</h3>
+                    <p>Панель настроек прямо на форуме для изменения цветов и эффектов</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 4V2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 4V2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Отлично выглядит на всех устройствах - от мобильных до десктопов</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Высокая производительность</h3>
+                    <p>Оптимизированный код не замедляет работу форума</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Простая установка</h3>
+                    <p>Устанавливается за 2 минуты через браузерное расширение</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4.93 4.93L7.76 7.76" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16.24 16.24L19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M2 12H6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 12H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4.93 19.07L7.76 16.24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16.24 7.76L19.07 4.93" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Темная и светлая темы</h3>
+                    <p>Автоматическое определение темы системы и ручная настройка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Превью</div>
+                <h2 class="section-title">Как выглядит тема</h2>
+                <p class="section-subtitle">
+                    Посмотрите скриншоты темы Liquid Glass в действии на форуме Rodina RP
+                </p>
+            </div>
+            
+            <!-- Modern Slider -->
+            <div class="gallery-slider">
+                <div class="slider-main">
+                    <div class="slider-viewport">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slide active">
+                                <div class="slide-image" onclick="openImageModal('./photo/preview1.png')">
+                                    <img src="./photo/preview1.png" alt="Главная страница" loading="lazy">
+                                    <div class="image-overlay">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 10L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 21H3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L3 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Открыть в полном размере</span>
+                                    </div>
+                                </div>
+                                <div class="slide-content">
+                                    <div class="slide-info">
+                                        <h3>Главная страница</h3>
+                                        <p>Стеклянные блоки с эффектами размытия и прозрачности</p>
+                                        <div class="slide-tags">
+                                            <span class="tag">Glassmorphism</span>
+                                            <span class="tag">Backdrop Filter</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="slide">
+                                <div class="slide-image" onclick="openImageModal('./photo/preview2.png')">
+                                    <img src="./photo/preview2.png" alt="Разделы форума" loading="lazy">
+                                    <div class="image-overlay">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 10L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 21H3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L3 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Открыть в полном размере</span>
+                                    </div>
+                                </div>
+                                <div class="slide-content">
+                                    <div class="slide-info">
+                                        <h3>Разделы форума</h3>
+                                        <p>Стеклянные блоки с эффектом размытия для всех элементов</p>
+                                        <div class="slide-tags">
+                                            <span class="tag">Glassmorphism</span>
+                                            <span class="tag">Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="slide">
+                                <div class="slide-image" onclick="openImageModal('./photo/preview3.png')">
+                                    <img src="./photo/preview3.png" alt="Панель настроек" loading="lazy">
+                                    <div class="image-overlay">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 10L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 21H3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L3 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Открыть в полном размере</span>
+                                    </div>
+                                </div>
+                                <div class="slide-content">
+                                    <div class="slide-info">
+                                        <h3>Панель настроек</h3>
+                                        <p>Встроенная панель для настройки темы прямо на форуме</p>
+                                        <div class="slide-tags">
+                                            <span class="tag">Settings</span>
+                                            <span class="tag">Customization</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Controls -->
+                    <button class="slider-btn slider-prev" id="prevBtn" aria-label="Предыдущий слайд">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="slider-btn slider-next" id="nextBtn" aria-label="Следующий слайд">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Slider Navigation -->
+                <div class="slider-nav">
+                    <div class="slider-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                    </div>
+                    
+                    <div class="slider-counter">
+                        <span class="current">01</span>
+                        <span class="separator">/</span>
+                        <span class="total">03</span>
+                    </div>
+                </div>
+                
+                <!-- Thumbnails -->
+                <div class="slider-thumbs">
+                    <div class="thumb-item active" data-slide="0" onclick="goToSlide(0)">
+                        <img src="./photo/preview1.png" alt="Превью 1">
+                        <div class="thumb-overlay">
+                            <span>Главная</span>
+                        </div>
+                        <div class="thumb-zoom" onclick="event.stopPropagation(); openImageModal('./photo/preview1.png')" title="Открыть в полном размере">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 10L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="thumb-item" data-slide="1" onclick="goToSlide(1)">
+                        <img src="./photo/preview2.png" alt="Превью 2">
+                        <div class="thumb-overlay">
+                            <span>Форум</span>
+                        </div>
+                        <div class="thumb-zoom" onclick="event.stopPropagation(); openImageModal('./photo/preview2.png')" title="Открыть в полном размере">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 10L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="thumb-item" data-slide="2" onclick="goToSlide(2)">
+                        <img src="./photo/preview3.png" alt="Превью 3">
+                        <div class="thumb-overlay">
+                            <span>Настройки</span>
+                        </div>
+                        <div class="thumb-zoom" onclick="event.stopPropagation(); openImageModal('./photo/preview3.png')" title="Открыть в полном размере">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 3H21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 10L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="section install-section" id="installation">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Инструкция</div>
+                <h2 class="section-title">Как установить тему</h2>
+                <p class="section-subtitle">
+                    Простая установка за несколько минут через браузерное расширение
+                </p>
+            </div>
+            
+            <div class="install-steps">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Скачайте расширение</h3>
+                        <p>Установите расширение "User JavaScript and CSS" для вашего браузера</p>
+                        <div class="browser-links">
+                            <a href="https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld" 
+                               class="browser-link chrome" target="_blank">
+                                <div class="browser-icon">Chrome</div>
+                                <span>Chrome</span>
+                            </a>
+                            <a href="https://addons.mozilla.org/ru/firefox/addon/user-javascript-and-css/" 
+                               class="browser-link firefox" target="_blank">
+                                <div class="browser-icon">Firefox</div>
+                                <span>Firefox</span>
+                            </a>
+                            <a href="https://microsoftedge.microsoft.com/addons/search/user%20javascript" 
+                               class="browser-link edge" target="_blank">
+                                <div class="browser-icon">Edge</div>
+                                <span>Edge</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Откройте форум</h3>
+                        <p>Перейдите на сайт 
+                            <a href="https://forum.rodina-rp.com/" target="_blank" class="forum-link">
+                                forum.rodina-rp.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Добавьте код темы</h3>
+                        <p>Скопируйте CSS и JavaScript код из раздела ниже и добавьте их в расширение</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Наслаждайтесь!</h3>
+                        <p>Тема применится автоматически. Настройте цвета через панель на форуме</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section download-section" id="download">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Скачать</div>
+                <h2 class="section-title">Код темы</h2>
+                <p class="section-subtitle">
+                    CSS стили и JavaScript функциональность для установки в расширение
+                </p>
+            </div>
+            
+            <div class="code-blocks">
+                <!-- CSS Block -->
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-info">
+                            <h3>CSS Стили</h3>
+                            <span class="code-lang">Stylesheet</span>
+                        </div>
+                        <div class="code-actions">
+                            <button class="copy-btn" onclick="copyToClipboard('css-code')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M5 15H4A2 2 0 0 1 2 13V4A2 2 0 0 1 4 2H13A2 2 0 0 1 15 4V5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span>Копировать</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="language-css" id="css-code">/* CSS код загружается... */</code></pre>
+                    </div>
+                </div>
+                
+                <!-- JavaScript Block -->
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-info">
+                            <h3>JavaScript Код</h3>
+                            <span class="code-lang">Script</span>
+                        </div>
+                        <div class="code-actions">
+                            <button class="copy-btn" onclick="copyToClipboard('js-code')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M5 15H4A2 2 0 0 1 2 13V4A2 2 0 0 1 4 2H13A2 2 0 0 1 15 4V5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <span>Копировать</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code class="language-javascript" id="js-code">// JavaScript код загружается...</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <span class="brand-icon">LG</span>
+                            <span class="brand-text">Liquid Glass</span>
+                        </div>
+                        <p class="footer-desc">
+                            Современная стеклянная тема для форума Rodina RP. 
+                            Создана с любовью к красивому дизайну.
+                        </p>
+                        <div class="footer-links">
+                            <a href="https://forum.rodina-rp.com/" target="_blank">Форум Rodina RP</a>
+                            <span class="separator">•</span>
+                            <a href="#about">О теме</a>
+                            <span class="separator">•</span>
+                            <a href="#installation">Установка</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2026 Liquid Glass Theme. Все права защищены.</p>
+                    </div>
+                    <div class="footer-version">
+                        <span class="version-badge">v2.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-backdrop" onclick="closeImageModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="modal-close" onclick="closeImageModal()" aria-label="Закрыть">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="" loading="lazy">
+                </div>
+                <div class="modal-controls">
+                    <button class="modal-btn" onclick="downloadImage()" title="Скачать изображение">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 15V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Скачать</span>
+                    </button>
+                    <button class="modal-btn" onclick="openImageInNewTab()" title="Открыть в новой вкладке">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 13V19A2 2 0 0 1 16 21H5A2 2 0 0 1 3 19V8A2 2 0 0 1 5 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="15,3 21,3 21,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Открыть в новой вкладке</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
